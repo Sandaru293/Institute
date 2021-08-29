@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="950.0" prefWidth="1065.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <Label layoutX="112.0" layoutY="66.0" prefHeight="46.0" prefWidth="860.0" style="-fx-background-color: lightgray; -fx-border-color: black;" text="Payment Detail">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblPayment" layoutX="112.0" layoutY="200.0" prefHeight="686.0" prefWidth="860.0">
+         <columns>
+            <TableColumn fx:id="clmPayId" prefWidth="216.0000457763672" text="Payment ID" />
+            <TableColumn fx:id="clmCouId" prefWidth="212.79998779296875" text="Course ID" />
+            <TableColumn fx:id="clmRegId" prefWidth="219.20001220703125" text="Register ID" />
+            <TableColumn fx:id="clmStuId" prefWidth="211.99993896484375" text="Student ID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

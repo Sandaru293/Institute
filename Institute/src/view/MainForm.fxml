@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="950.0" prefWidth="1465.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <AnchorPane prefHeight="950.0" prefWidth="400.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1067.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button alignment="CENTER" layoutX="50.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#btnTeacherDetailOnAction" prefHeight="54.0" prefWidth="279.0" style="-fx-background-color: black; -fx-border-color: white;" text="Teacher Detail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="197.0" mnemonicParsing="false" onMouseClicked="#btnStudentDetailOnAction" prefHeight="54.0" prefWidth="279.0" style="-fx-background-color: black; -fx-border-color: white;" text="Student Detail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" layoutX="50.0" layoutY="404.0" mnemonicParsing="false" onMouseClicked="#btnCourseDetailOnAction" prefHeight="54.0" prefWidth="279.0" style="-fx-background-color: black; -fx-border-color: white;" text="Course Detail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" layoutX="51.0" layoutY="94.0" mnemonicParsing="false" onMouseClicked="#btnRegisterNowOnAction" prefHeight="54.0" prefWidth="279.0" style="-fx-background-color: black; -fx-border-color: white;" text="Register Now" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" layoutX="50.0" layoutY="509.0" mnemonicParsing="false" onMouseClicked="#btnManageClassroomOnAction" prefHeight="54.0" prefWidth="279.0" style="-fx-background-color: black; -fx-border-color: white;" text="Manage Class Room " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" layoutX="50.0" layoutY="613.0" mnemonicParsing="false" onAction="#btnManageExamDetailOnAction" onMouseClicked="#btnManageExamOnAction" prefHeight="54.0" prefWidth="279.0" style="-fx-background-color: black; -fx-border-color: white;" text="Manage Exam Detail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" layoutX="51.0" layoutY="718.0" mnemonicParsing="false" onMouseClicked="#btnDepartmentDetailOnAction" prefHeight="54.0" prefWidth="279.0" style="-fx-background-color: black; -fx-border-color: white;" text="Department Detail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="68.0" layoutY="306.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-teacher-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="69.0" layoutY="202.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-registration-90.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="60.0" layoutY="727.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-department-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="68.0" layoutY="409.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-course-assign-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="50.0" layoutY="618.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-exam-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="69.0" layoutY="99.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-order-history-100.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="-3.0" layoutY="1.0" prefHeight="28.0" prefWidth="400.0" style="-fx-background-color: black;" text="GUNASEKARA MANAGEMENT CENTRE (PVT) LTD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="50.0" layoutY="822.0" mnemonicParsing="false" onAction="#btnPaymentDetailOnAction" prefHeight="54.0" prefWidth="279.0" style="-fx-background-color: black; -fx-border-color: white;" text="Payment Detail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="51.0" layoutY="514.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-google-classroom-96%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="44.0" layoutX="64.0" layoutY="825.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-payment-history-80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="root" layoutX="399.0" prefHeight="950.0" prefWidth="1065.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="877.0" fitWidth="1004.0" layoutX="86.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/20200928_153501.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="403.0" layoutY="570.0" text="GUNASEKARA MANAGEMENT">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="456.0" layoutY="596.0" text="CENTRE (PVT) LTD">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

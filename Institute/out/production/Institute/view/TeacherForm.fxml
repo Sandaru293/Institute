@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="950.0" prefWidth="1065.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherFormController">
+   <children>
+      <Label layoutX="103.0" layoutY="49.0" prefHeight="46.0" prefWidth="860.0" style="-fx-background-color: lightgray; -fx-border-color: black;" text="Teacher Detail">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTeaId" layoutX="100.0" layoutY="149.0" prefHeight="35.0" prefWidth="330.0" promptText="Teacher ID">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtTeaName" layoutX="634.0" layoutY="149.0" prefHeight="35.0" prefWidth="330.0" promptText="Name">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtTeaEmail" layoutX="101.0" layoutY="225.0" prefHeight="35.0" prefWidth="330.0" promptText="Email">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtTeaTelNo" layoutX="634.0" layoutY="225.0" prefHeight="35.0" prefWidth="330.0" promptText="Tel.No">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button alignment="CENTER_RIGHT" layoutX="100.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnAddTeacherOnAction" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: blue;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER_RIGHT" layoutX="344.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnDeleteTeacherOnAction" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER_RIGHT" layoutX="586.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnUpdateTeacherOnAction" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: green;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER_RIGHT" layoutX="825.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnSearchTeacherOnAction" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: white; -fx-border-color: black;" text="Search">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tblTeacher" layoutX="102.0" layoutY="438.0" prefHeight="449.0" prefWidth="860.0">
+         <columns>
+            <TableColumn fx:id="clmTeaId" prefWidth="210.40000915527344" text="Teacher ID" />
+            <TableColumn fx:id="clmTeaName" prefWidth="220.79998779296875" text="Name" />
+            <TableColumn fx:id="clmTeaEmail" minWidth="0.0" prefWidth="192.79998779296875" text="Email" />
+            <TableColumn fx:id="clmTeaTelNo" prefWidth="231.99993896484375" text="Tel.No" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="117.0" layoutY="340.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons8-add-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="356.0" layoutY="340.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons8-remove-32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="587.0" layoutY="339.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons8-available-updates-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="832.0" layoutY="340.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons8-search-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

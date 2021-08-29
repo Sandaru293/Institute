@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="950.0" prefWidth="1065.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClassroomStudentController">
+   <children>
+      <Label layoutX="103.0" layoutY="48.0" prefHeight="46.0" prefWidth="860.0" style="-fx-background-color: lightgray; -fx-border-color: black;" text="Classroom Student Detail">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblClassroomStudent" layoutX="103.0" layoutY="440.0" prefHeight="449.0" prefWidth="860.0">
+         <columns>
+            <TableColumn fx:id="clmClaId" prefWidth="431.1999969482422" text="Class room ID" />
+            <TableColumn fx:id="clmStuId" prefWidth="427.20001220703125" text="Student ID" />
+         </columns>
+      </TableView>
+      <Button alignment="CENTER_RIGHT" layoutX="103.0" layoutY="339.0" mnemonicParsing="false" onAction="#btnAddClassroomStudentOnAction" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: blue;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER_RIGHT" layoutX="342.0" layoutY="341.0" mnemonicParsing="false" onAction="#btnDeleteClassroomStudentOnAction" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER_RIGHT" layoutX="582.0" layoutY="341.0" mnemonicParsing="false" onAction="#btnUpdateClassroomStudentOnAction" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: green;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER_RIGHT" layoutX="824.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnSearchClassroomStudentOnAction" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: white; -fx-border-color: black;" text="Search">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtClaId" layoutX="103.0" layoutY="221.0" onAction="#txtClassroomOnAction" prefHeight="35.0" prefWidth="330.0" promptText="Classroom ID">
+         <font>
+            <Font size="23.0" />
+         </font></TextField>
+      <TextField fx:id="txtStuId" layoutX="103.0" layoutY="141.0" onAction="#txtStudentOnAction" prefHeight="35.0" prefWidth="330.0" promptText="Student ID">
+         <font>
+            <Font size="23.0" />
+         </font></TextField>
+      <Label fx:id="lblStuName" layoutX="631.0" layoutY="141.0" prefHeight="50.0" prefWidth="330.0" style="-fx-border-color: black;" text=" Student Name">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="345.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons8-add-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="350.0" layoutY="346.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons8-remove-32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="583.0" layoutY="345.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons8-available-updates-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="830.0" layoutY="345.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/icons8-search-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
